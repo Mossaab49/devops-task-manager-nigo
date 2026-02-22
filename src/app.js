@@ -3,13 +3,13 @@ const app = express();
 app.use(express.json());
 
 
-const tasksRouter = require('./routes/tasks');
+const tasks_Router = require('./routes/tasks');
 
 
 app.get('/', (req, res) => {
   res.json({ message: "DevOps Task Manager API is running(lab 1)..." });
 });
  
-app.use('/tasks', tasksRouter);
+app.use('/tasks', tasks_Router);
 
 app.listen(3000, ()=> console.log("API running on port 3000"));
