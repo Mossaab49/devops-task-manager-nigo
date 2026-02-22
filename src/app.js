@@ -4,7 +4,7 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-  res.json({ message: "Hey welcome from main branch" });
+  res.json({ message: "welcome from main branch" });
 });
  
 
