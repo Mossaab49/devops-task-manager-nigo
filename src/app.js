@@ -5,7 +5,7 @@ app.use(express.json());
 const tasksRouter = require('./routes/tasks');
 
 app.get('/', (req, res) => {
-  res.json({ message: "Welcome from main branch..." });
+  res.json({ message: "Welcome from main branch" });
 });
  
 app.use('/tasks', tasksRouter);
