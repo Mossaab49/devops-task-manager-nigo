@@ -10,4 +10,7 @@ app.get('/', (req, res) => {
 
 app.use('/tasks', tasksRouter);
 
+// CI test change 
+console.log("Testing CI with a Pull Request");
+
 app.listen(3000, ()=> console.log("The API running on port 3000"));
