@@ -29,7 +29,7 @@ jobs:
       - name: Build Docker image 
         run: docker build -t task-manager-api .
 
-on: 
-  push: 
-  pull_request: 
-    branches: [main]
+# on: 
+#   push: 
+#   pull_request: 
+#     branches: [main]
