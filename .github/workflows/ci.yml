@@ -26,3 +26,10 @@ jobs:
 
       - name: Run tests
         run: npm test
+      - name: Build Docker image 
+        run: docker build -t task-manager-api .
+
+on: 
+  push: 
+  pull_request: 
+    branches: [main]
